@@ -17,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/MyGesDfu/Projet-Git/issues"
   },
-  "homepage": "https://github.com/MyGesDfu/Projet-Git#readme"
+  "homepage": "https://github.com/MyGesDfu/Projet-Git#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "eslint": "^9.20.1",
+    "globals": "^15.14.0"
+  }
 }
