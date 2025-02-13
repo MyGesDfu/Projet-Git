@@ -5,6 +5,7 @@ Merci de votre intérêt pour contribuer à ce projet ! Nous apprécions toutes 
 ## Comment contribuer ?
 
 1. **Forkez le dépôt** :
+
    Allez sur la page du projet sur GitHub et cliquez sur le bouton "Fork" dans le coin supérieur droit pour créer une copie du dépôt dans votre propre compte.
 
 2. **Clonez votre fork localement** :
