@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "add-backup-remote": "git remote add backup https://github.com/MyGesDfu/Projet-Git-backup.git",
+    "config-pushall": "git config --global alias.pushall '!git push origin && git push backup'"
   },
   "repository": {
     "type": "git",
