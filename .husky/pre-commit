@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# Vérifier si ESLint est installé
+
+echo "Formatage du code avec Prettier..."
+
+npx prettier --write .
+
+if ! command -v eslint &> /dev/null
+then
+    echo "ESLint n'est pas installé. Installe-le avec 'npm install -g eslint'"
+    exit 1
+fi
+
+# Lancer ESLint sur les fichiers modifiés
+FILES=$(git diff --cached --name-only --diff-filter=ACM | grep '\.js$')
+
+if [ -z "$FILES" ]; then
+  echo "Aucun fichier JS modifié."
+  exit 0
+fi
+
+eslint $FILES
+if [ $? -ne 0 ]; then
+    echo "❌ Erreurs détectées par ESLint. Corrige-les avant de commit."
+    exit 1
+fi
+
+echo "✅ ESLint OK, commit accepté."
+exit 0
