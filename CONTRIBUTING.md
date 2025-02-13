@@ -9,13 +9,11 @@ Merci de votre intérêt pour contribuer à ce projet ! Nous apprécions toutes 
    Allez sur la page du projet sur GitHub et cliquez sur le bouton "Fork" dans le coin supérieur droit pour créer une copie du dépôt dans votre propre compte.
 
 2. **Clonez votre fork localement** :
-
    Clonez le dépôt forké sur votre machine locale pour travailler sur vos modifications.
    git clone https://github.com/MyGesDfu/Projet-Git.git
-   cd ton-repository
-
+   cd Projet-Git
+   
 Créez une branche pour votre fonctionnalité ou correction : Avant de commencer à coder, créez une branche dédiée à la fonctionnalité ou à la correction que vous souhaitez apporter.
-
 
 git checkout -b nom-de-la-branche
 
