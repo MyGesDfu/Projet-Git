@@ -1,23 +1,20 @@
- ---
-name: Feature Request
-about: Demander une nouvelle fonctionnalité ou une amélioration
+---
+name: Feature request
+about: Suggest an idea for this project
 title: ''
-labels: 'enhancement'
+labels: 'feature'
 assignees: ''
 
 ---
 
-**Résumé de la fonctionnalité**
-Décrivez brièvement la fonctionnalité que vous souhaitez.
+**Is your feature request related to a problem? Please describe.**
+A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
 
-**Pourquoi est-ce utile ?**
-Expliquez pourquoi cette fonctionnalité est importante ou utile pour le projet.
+**Describe the solution you'd like**
+A clear and concise description of what you want to happen.
 
-**Comportement attendu**
-Décrivez comment cette fonctionnalité devrait se comporter une fois implémentée.
+**Describe alternatives you've considered**
+A clear and concise description of any alternative solutions or features you've considered.
 
-**Captures d'écran ou schémas (si applicable)**
-Ajoutez des visuels pour clarifier la fonctionnalité demandée.
-
-**Informations supplémentaires**
-Ajoutez toute autre information que vous jugez utile.
+**Additional context**
+Add any other context or screenshots about the feature request here.

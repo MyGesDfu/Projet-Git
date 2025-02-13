@@ -1,25 +1,39 @@
 ---
+
 name: Bug Report
-about: Signaler un bug dans le projet
 title: ''
 labels: 'bug'
+about: Create a report to help us improve
 assignees: ''
 
 ---
 
-**Description du bug**
-Une description claire et concise du bug.
+**Describe the bug**
+A clear and concise description of what the bug is.
 
-**Étapes pour reproduire**
-1. Allez sur...
-2. Cliquez sur...
-3. Voir l'erreur...
+**To Reproduce**
+Steps to reproduce the behavior:
+1. Go to '...'
+2. Click on '....'
+3. Scroll down to '....'
+4. See error
 
-**Comportement attendu**
-Décrivez ce qui aurait dû se passer.
+**Expected behavior**
+A clear and concise description of what you expected to happen.
 
-**Capture d'écran (si applicable)**
-Ajoutez des captures d'écran pour aider à expliquer votre problème.
+**Screenshots**
+If applicable, add screenshots to help explain your problem.
 
-**Informations supplémentaires**
-Ajoutez toute autre information que vous jugez utile (environnement, version, etc.).
+**Desktop (please complete the following information):**
+ - OS: [e.g. iOS]
+ - Browser [e.g. chrome, safari]
+ - Version [e.g. 22]
+
+**Smartphone (please complete the following information):**
+ - Device: [e.g. iPhone6]
+ - OS: [e.g. iOS8.1]
+ - Browser [e.g. stock browser, safari]
+ - Version [e.g. 22]
+
+**Additional context**
+Add any other context about the problem here.
