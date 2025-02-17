@@ -1,13 +1,15 @@
-
-# Récupérer tous les fichiers modifiés qui ne sont pas supprimés
-files=$(git diff --cached --name-only --diff-filter=d)
+# Récupérer tous les fichiers modifiés et ajoutés
+files=$(git diff --cached --name-only --diff-filter=ACM) # A: Added, C: Copied, M: Modified
 
 for file in $files; do
-    # Vérifier si le fichier contient "var_dump"
-    if grep -q "var_dump" "$file"; then
-        echo "❌ ERREUR : Le fichier '$file' contient un 'var_dump'."
-        echo "Supprimez tous les 'var_dump' avant de pousser votre code."
-        exit 1
+    # Vérifier si le fichier est un fichier texte (éviter les binaires)
+    if [[ -f "$file" ]] && [[ $(file --mime-type -b "$file") == text/* ]]; then
+        # Vérifier si le fichier contient "var_dump"
+        if grep -q "var_dump" "$file"; then
+            echo "❌ ERREUR : Le fichier '$file' contient un 'var_dump'."
+            echo "🚨 Supprimez tous les 'var_dump' avant de pousser votre code."
+            exit 1
+        fi
     fi
 done
 
