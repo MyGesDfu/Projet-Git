@@ -33,19 +33,16 @@ document.getElementById('contact-form').addEventListener('submit', function(even
    })
    .then(response => {
        if (response.ok) {
-           return response.json();
+           // Si le serveur renvoie un message de succès
+           responseMessage.textContent = 'Message envoyé avec succès !';
+           responseMessage.classList.add('success');
+           // Réinitialiser le formulaire après l'envoi
+           document.getElementById('contact-form').reset();
        } else {
            throw new Error('Erreur serveur');
        }
    })
-   .then(data => {
-       // Si le serveur renvoie un message de succès
-       responseMessage.textContent = 'Message envoyé avec succès !';
-       responseMessage.classList.add('success');
-       // Réinitialiser le formulaire après l'envoi
-       document.getElementById('contact-form').reset();
-   })
-   .catch(error => {
+   .catch(() => {
        // Gestion de l'erreur serveur (par exemple erreur 500)
        responseMessage.textContent = 'Une erreur est survenue lors de l\'envoi. Veuillez réessayer plus tard.';
        responseMessage.classList.add('error');
