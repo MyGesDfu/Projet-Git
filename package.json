@@ -8,6 +8,7 @@
     "lint": "eslint .",
     "add-backup-remote": "git remote add backup https://github.com/MyGesDfu/Projet-Git-backup.git",
     "prepare": "husky"
+
   },
   "repository": {
     "type": "git",
@@ -27,5 +28,6 @@
     "eslint-plugin-react": "^7.37.4",
     "globals": "^15.15.0",
     "husky": "^9.1.7"
+
   }
 }
