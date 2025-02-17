@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Preview Feature</title>
+</head>
+<body>
+
+    <h2>Formulaire de contact</h2>
+
+    <form id="contact-form">
+        <label for="name">Nom:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea><br><br>
+
+        <button type="button" id="preview-btn">Prévisualiser</button>
+    </form>
+
+    <div id="preview" style="display:none;">
+        <h3>Prévisualisation:</h3>
+        <p><strong>Nom:</strong> <span id="preview-name"></span></p>
+        <p><strong>Email:</strong> <span id="preview-email"></span></p>
+        <p><strong>Message:</strong> <span id="preview-message"></span></p>
+        <button id="submit-btn">Soumettre</button>
+        <button id="edit-btn">Modifier</button>
+    </div>
+
+    <script src="preview.js"></script>
+
+</body>
+</html>
