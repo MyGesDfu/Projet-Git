@@ -1,9 +1,9 @@
 ---
-
 name: Bug Report
 title: ''
 labels: 'bug'
 about: Create a report to help us improve
+
 assignees: ''
 
 ---
