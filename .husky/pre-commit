@@ -28,3 +28,4 @@ fi
 
 echo "✅ ESLint OK, commit accepté."
 exit 0
+

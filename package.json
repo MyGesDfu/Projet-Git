@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
-    "prepare": "husky install"
+    "add-backup-remote": "git remote add backup https://github.com/MyGesDfu/Projet-Git-backup.git",
+    "prepare": "husky"
+
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,7 @@
     "eslint": "^9.20.1",
     "eslint-plugin-react": "^7.37.4",
     "globals": "^15.15.0",
-    "husky": "^8.0.0"
+    "husky": "^9.1.7"
+
   }
 }
