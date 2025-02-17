@@ -18,6 +18,7 @@ git https://github.com/MyGesDfu/Projet-Git.git
 cd Projet-Git
 npm install
 npm start
+npx husky init
 ```
 
 Cela démarrera le serveur local pour tester l'application dans un environnement de développement.
