@@ -1,8 +1,11 @@
-# Récupérer tous les fichiers modifiés et ajoutés
-files=$(git diff --cached --name-only --diff-filter=ACM) # A: Added, C: Copied, M: Modified
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Récupérer tous les fichiers suivis (ajoutés/modifiés) avant le push
+files=$(git diff --staged --name-only --diff-filter=ACM) # A: Added, C: Copied, M: Modified
 
 for file in $files; do
-    # Vérifier si le fichier est un fichier texte (éviter les binaires)
+    # Vérifier si le fichier existe et est un fichier texte (évite les binaires)
     if [[ -f "$file" ]] && [[ $(file --mime-type -b "$file") == text/* ]]; then
         # Vérifier si le fichier contient "var_dump"
         if grep -q "var_dump" "$file"; then
